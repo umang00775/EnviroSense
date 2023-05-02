@@ -20,7 +20,7 @@ This is an Android application that allows users to monitor temperature and humi
 
 
 ## Installation
-To install the application, You can download the APK file [Here](#https://drive.google.com/file/d/1vzMcgOjNl8Yy_NaboR-mm2qKFXhm2xbU/view?usp=sharing)
+To install the application, You can download the APK file [here](https://drive.google.com/file/d/1vzMcgOjNl8Yy_NaboR-mm2qKFXhm2xbU/view?usp=sharing)
 
 
 Once the APK is downloaded, enable installation from unknown sources on your Android device, and then install the application.
