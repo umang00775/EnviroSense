@@ -6,8 +6,8 @@ This is an Android application that allows users to monitor temperature and humi
 
 <div style="display:flex;justify-content:space-between;width:100%;">
   <img src="https://bl6pap004files.storage.live.com/y4mvsuiZ7RYdOAWLRc5A5-gq3nhb8wJlwUhCxw9BSfFmDTPqKVy-qTrtqP-gYAPsmNW1MS6E-H_5HxJSzHNGgL6kGY-HYzHlqE7v3Wbe_OTayyLKsf-sX2VZkExaGA2O9RwKTIc42oKfevtQBY8I6FsrrmUWH_y2JpRuzFQ_ylZ9V6UHRh7FohCS4uCLImADwPh?width=720&height=1600&cropmode=none" alt="Image 1" style="width:30%;">
-  <img src="https://bl6pap004files.storage.live.com/y4mlOTJrWjJrts787UmDJor1IwhHmzEhWOwItZc9y01bE0x3Z4fIY3DfrWG1k1nNuU1LOzK3CkNFMIPxU9F6GNwA578q7e0JDJ32hs3GCVU2TH7laLO4iZxrtKH8pHRHdDmerXUskl6s1r_BtTHbu47dXeMCDWbss1Si2pHMp2awqeqTrLLTtd4fJpA1SKKGseE?width=720&height=1600&cropmode=none" alt="Image 2" style="width:33%;">
-  <img src="https://bl6pap004files.storage.live.com/y4mlvtlZ84lY2h_dG568uZMmHgfV_wFDp991V2zTEl5EzDiCGS1VBDmNA_NEJoOV7rP4lQxEZhXQnN60KxKZcFc4zGaJRQ1N2Sc5c_U0Ix8d0oB13729Qiz3-hdoPAsP7cv5H_Rx6HH5eg41fpKLEp9DZG-xuoOgASAi2kH1upUKMqrRxKrNNSCqrImvO7F0Z2v?width=720&height=1600&cropmode=none" alt="Image 3" style="width:33%;">
+  <img src="https://bl6pap004files.storage.live.com/y4mlOTJrWjJrts787UmDJor1IwhHmzEhWOwItZc9y01bE0x3Z4fIY3DfrWG1k1nNuU1LOzK3CkNFMIPxU9F6GNwA578q7e0JDJ32hs3GCVU2TH7laLO4iZxrtKH8pHRHdDmerXUskl6s1r_BtTHbu47dXeMCDWbss1Si2pHMp2awqeqTrLLTtd4fJpA1SKKGseE?width=720&height=1600&cropmode=none" alt="Image 2" style="width:30%;">
+  <img src="https://bl6pap004files.storage.live.com/y4mlvtlZ84lY2h_dG568uZMmHgfV_wFDp991V2zTEl5EzDiCGS1VBDmNA_NEJoOV7rP4lQxEZhXQnN60KxKZcFc4zGaJRQ1N2Sc5c_U0Ix8d0oB13729Qiz3-hdoPAsP7cv5H_Rx6HH5eg41fpKLEp9DZG-xuoOgASAi2kH1upUKMqrRxKrNNSCqrImvO7F0Z2v?width=720&height=1600&cropmode=none" alt="Image 3" style="width:30%;">
 </div>
 
 
