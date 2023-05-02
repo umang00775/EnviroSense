@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_theme"
+    tools:context=".Details">
+
+    <RelativeLayout
+        android:id="@+id/report"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/main_pad">
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EnviroSense"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:orientation="vertical">
+
+            <!--        Temperature-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temperature"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/temperature_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In Celsius: 27° C"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/temperature_f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In Fahrenheit: 98° F"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/temperature_k"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In Kelvin: 293 K"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+            <!--        Humidity-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Humidity"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60% = 0.60"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+            <!--        Dew point: Td = T - ((100 - RH)/5)-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dew point"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/dew_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+            <!--        Confort levels-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comfort level"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/comfort_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A bit dry for some"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+            <!--        Heat Index-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heat index"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/heat_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1410.25"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/main_pad">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+            <RelativeLayout
+                android:id="@+id/back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_bg2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/poppins"
+                    android:text="Back"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/share"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_bg1"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/poppins"
+                    android:text="Share report"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "35629119364",
+    "firebase_url": "https://envirosense-002-default-rtdb.firebaseio.com",
+    "project_id": "envirosense-002",
+    "storage_bucket": "envirosense-002.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:35629119364:android:3509fb5927065954a34fd1",
+        "android_client_info": {
+          "package_name": "com.umang.envirosense"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "35629119364-65fu3mn1jjp48acv77quo6r8arc2feme.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFuRpMzRrPEdwEermMp9XSyWaL5pOFC1s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "35629119364-65fu3mn1jjp48acv77quo6r8arc2feme.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

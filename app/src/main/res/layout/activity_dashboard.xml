@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/dashboard_whole"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard"
+    android:background="@drawable/download"
+    android:transitionName="transition_1">
+
+
+<!--    <com.github.furkankaplan.fkblurview.FKBlurView-->
+<!--        android:id="@+id/blur"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/main_pad">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <!--        Show date and time and also open the details section-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/day_and_bars"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentLeft="true">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="27dp"
+                                android:layout_height="27dp"
+                                android:src="@drawable/awesome"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="5dp"/>
+                        </RelativeLayout>
+                        <TextView
+                            android:id="@+id/day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:textColor="@color/white"
+                            android:textSize="25sp"
+                            android:layout_alignParentLeft="true"/>
+                    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/popup_opener"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/menu"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/popup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/popup_bg2">
+
+<!--                    <RelativeLayout-->
+<!--                        android:id="@+id/wrapper1"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content">-->
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/more_details"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal"-->
+<!--                            android:layout_centerVertical="true">-->
+<!--                            <ImageView-->
+<!--                                android:layout_width="30dp"-->
+<!--                                android:layout_height="30dp"-->
+<!--                                android:src="@drawable/more"-->
+<!--                                android:layout_marginEnd="10dp"/>-->
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:text="More details"-->
+<!--                                android:fontFamily="@font/poppins"-->
+<!--                                android:textSize="16sp"-->
+<!--                                android:textColor="@color/black"-->
+<!--                                android:gravity="center"/>-->
+<!--                        </LinearLayout>-->
+
+<!--                    </RelativeLayout>-->
+
+                    <RelativeLayout
+                        android:id="@+id/setting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:id="@+id/setting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_centerVertical="true">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/setting"
+                                android:layout_marginEnd="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Settings"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="16sp"
+                                android:textColor="@color/black"
+                                android:gravity="center"/>
+                        </LinearLayout>
+                        <ImageView
+                            android:id="@+id/close_popup"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/close"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="5dp"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+
+            <!--        Show temperature    -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:id="@+id/temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="125sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/poppins"
+                    android:text="°"
+                    android:textColor="@color/white"
+                    android:textSize="50sp" />
+            </LinearLayout>
+
+            <!--        Show humidity    -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-50dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true">
+                    <TextView
+                        android:id="@+id/humidity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="125sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:text="%"
+                        android:textColor="@color/white"
+                        android:textSize="50sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!--        <RelativeLayout-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_marginTop="5dp">-->
+            <!--            &lt;!&ndash;            Left section: Temperature&ndash;&gt;-->
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:id="@+id/card1"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                app:cardCornerRadius="@dimen/main_pad"-->
+            <!--                android:layout_alignParentLeft="true">-->
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <TextView-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:fontFamily="@font/poppins"-->
+            <!--                        android:text="35"-->
+            <!--                        android:textColor="@color/black"-->
+            <!--                        android:textSize="75sp" />-->
+
+            <!--                    <RelativeLayout-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="match_parent">-->
+
+            <!--                        <TextView-->
+            <!--                            android:layout_width="wrap_content"-->
+            <!--                            android:layout_height="wrap_content"-->
+            <!--                            android:fontFamily="@font/poppins"-->
+            <!--                            android:text="°"-->
+            <!--                            android:textColor="@color/black"-->
+            <!--                            android:textSize="40sp" />-->
+            <!--                    </RelativeLayout>-->
+
+            <!--                    <TextView-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:fontFamily="@font/poppins"-->
+            <!--                        android:text="C"-->
+            <!--                        android:textColor="@color/black"-->
+            <!--                        android:textSize="25sp" />-->
+            <!--                </LinearLayout>-->
+            <!--            </androidx.cardview.widget.CardView>-->
+
+            <!--            &lt;!&ndash;            Right section: Temperature&ndash;&gt;-->
+            <!--&lt;!&ndash;            <androidx.cardview.widget.CardView&ndash;&gt;-->
+            <!--&lt;!&ndash;                android:id="@+id/card2"&ndash;&gt;-->
+            <!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;                app:cardCornerRadius="@dimen/main_pad"&ndash;&gt;-->
+            <!--&lt;!&ndash;                android:layout_alignParentRight="true">&ndash;&gt;-->
+            <!--&lt;!&ndash;                <LinearLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:orientation="horizontal">&ndash;&gt;-->
+
+            <!--&lt;!&ndash;                    <TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:fontFamily="@font/poppins"&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:text="23"&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:textColor="@color/black"&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:textSize="75sp" />&ndash;&gt;-->
+
+            <!--&lt;!&ndash;                    <TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:fontFamily="@font/poppins"&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:text="%"&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:textColor="@color/black"&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:textSize="25sp" />&ndash;&gt;-->
+
+            <!--&lt;!&ndash;                    <TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:fontFamily="@font/poppins"&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:text=" Hm"&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:textColor="@color/black"&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:textSize="25sp" />&ndash;&gt;-->
+            <!--&lt;!&ndash;                </LinearLayout>&ndash;&gt;-->
+            <!--&lt;!&ndash;            </androidx.cardview.widget.CardView>&ndash;&gt;-->
+
+
+
+            <!--        </RelativeLayout>-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentBottom="true">
+                    <RelativeLayout
+                        android:id="@+id/view_report"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/button_bg1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/poppins"
+                            android:text="View report"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/generate_pdf"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/button_bg"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/poppins"
+                            android:text="Generate &amp; share report"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
